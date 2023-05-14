@@ -17,6 +17,6 @@ sum2.o:sum2.c
 fibanaci.o:fibanaci.c
 	gcc -c fibanaci.c
 sortnum.o:sortnum.c
-	gcc -c sortnum.
+	gcc -c sortnum.c
 clean:
 	rm -rf *.o
