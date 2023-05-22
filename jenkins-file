@@ -8,22 +8,22 @@ pipeline{
         }
         stage("stage2 : compile the code"){
             steps{
-                sh "mvn compile"
+                sh "make compile"
             }
         }
         stage("stage3: unit test"){
             steps{
-                sh "mvn test"
+                sh "make test"
             }
         }
         stage("stage4: QA"){
             steps{
-                sh "mvn pmd:pmd"
+                sh "make"
             }
         }
         stage("stage5: package"){
             steps{
-                sh "mvn package"
+                sh "/var/lib/jenkins/workspace/new-project-c"
             }
         }
     }
