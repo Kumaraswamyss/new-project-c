@@ -1,5 +1,5 @@
 #include <stdio.h>
-main() {
+make () {
 	biggest();
 	factorial();
 	reverse();
