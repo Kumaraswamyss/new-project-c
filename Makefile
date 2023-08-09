@@ -20,7 +20,5 @@ sortnum.o:sortnum.c
 	gcc -c sortnum.c
 all: compile
 
-compile:
-    $(CC) $(CFLAGS) -o myprogram myprogram.c
 clean:
 	rm -rf *.o
