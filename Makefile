@@ -1,6 +1,6 @@
 ABC.exe:main.o big2.o fact.o rev.o palld.o big3.o sum2.o fibanaci.o sortnum.o
 	gcc -o ABC.exe main.o big2.o fact.o rev.o palld.o big3.o sum2.o fibanaci.o sortnum.o
-compile: main.o big2.o fact.o rev.o palld.o big3.o sum2.o fibanaci.o sortnum.o
+
 main.o:main.c
 	gcc -c main.c
 big2.o:big2.c
@@ -19,7 +19,6 @@ fibanaci.o:fibanaci.c
 	gcc -c fibanaci.c
 sortnum.o:sortnum.c
 	gcc -c sortnum.c
-all: compile
 
 clean:
 	rm -rf *.o
