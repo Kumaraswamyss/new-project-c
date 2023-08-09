@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage("stage1: checkout stage"){
             steps{
-                git url: 'git@github.com:Kumaraswamyss/new-project-c.git'
+                git url: 'https://github.com/Kumaraswamyss/new-project-c.git'
             }
         }
         stage("stage2 : compile the code"){
             steps{
-                sh "compile"
+                sh "make compile"
             }
         }
         stage("stage3: unit test"){
