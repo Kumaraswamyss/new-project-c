@@ -8,7 +8,7 @@ pipeline{
         }
         stage("stage2 : compile the code"){
             steps{
-                sh "make compile"
+                sh "make"
             }
         }
         stage("stage3: unit test"){
